@@ -1,0 +1,64 @@
+.h2-page5 {
+  color: rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.container-page5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #ad66f9, #f1966c);
+  border-radius: 5px;
+  margin: 100px;
+  padding: 30px 40px;
+  gap: 20px;
+}
+
+.p-p5 {
+  margin: 0 40px 10px 40px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.btn-p5 {
+  margin-right: 60px;
+  border-radius: 15px;
+  border: none;
+  width: 100px;
+  height: 40px;
+  color: aliceblue;
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+
+.btn-p5:hover {
+  background-color: rgb(40, 40, 40);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .container-page5 {
+    flex-direction: column;
+    margin: 40px 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .h2-page5 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .p-p5 {
+    margin: 20px 0 10px 0;
+    font-size: 15px;
+  }
+
+  .btn-p5 {
+    margin: 20px auto 0 auto;
+  }
+}

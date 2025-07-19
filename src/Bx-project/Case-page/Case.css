@@ -1,0 +1,118 @@
+.case-studies-container {
+  padding: 60px 40px;
+  background-color: #01040f;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Section */
+.case-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.case-header h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  color: #ff4820;
+}
+
+.case-header p {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Card */
+.case-card {
+  background-color: #0a192f;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 72, 32, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  background-color: #112240;
+}
+
+.case-card h3 {
+  margin-bottom: 10px;
+  color: #ff4820;
+}
+
+.case-card p {
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.case-cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.case-cta h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.case-cta p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.btn-case {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff4820;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-case:hover {
+  background-color: #c02907;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .case-studies-container {
+    padding: 30px 20px;
+  }
+
+  .case-header h1 {
+    font-size: 28px;
+  }
+
+  .case-header p {
+    font-size: 16px;
+  }
+
+  .case-cta h2 {
+    font-size: 22px;
+  }
+
+  .case-cta p {
+    font-size: 15px;
+  }
+
+  .btn-case {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}

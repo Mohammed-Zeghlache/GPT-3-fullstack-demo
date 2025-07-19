@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #031329;
+}
+
+.container {
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-image: url('/src/assets/Images/Aione.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container h1,
+.container p {
+  text-align: center;
+  color: rgb(206, 213, 208);
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.input {
+  padding: 10px;
+  color: rgb(5, 5, 5);
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(234, 233, 229);
+  width: 100%;
+  font-size: 15px;
+}
+
+.button {
+  padding: 10px;
+  color: rgb(206, 213, 208);
+  border: none;
+  border-radius: 8px;
+  background-color: #c93210;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #a5280b;
+}
+
+.register {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.register a {
+  color: rgb(206, 213, 208);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.register a:hover {
+  color: #e64a27;
+  text-decoration: underline;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #b4630d;
+  cursor: pointer;
+}
+
+.label,
+.remember-label {
+  color: rgb(206, 213, 208);
+  font-size: 14px;
+}
+
+.remember-label {
+  margin-right: 80px;
+}
+
+.alink {
+  color: rgb(206, 213, 208);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.alink:hover {
+  color: #e64a27;
+  text-decoration: underline;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .remember-label {
+    margin-right: 0;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+.link{
+
+  cursor: pointer;
+  color:#e64a27 ;
+  background-color: transparent;
+  border: none;
+  font-weight:bold;
+  font-size: 18px;
+  
+}
+.link:hover{
+  text-decoration: underline;
+}

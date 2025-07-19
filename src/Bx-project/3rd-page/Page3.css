@@ -1,0 +1,113 @@
+.container-page3 {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 80px;
+  background-color: #031329;
+  color: #fdfefe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 60px;
+  margin: 0 10px;
+}
+
+.first-road {
+  text-align: center;
+}
+
+.hone {
+  margin-top: 20px;
+}
+
+.hone h1 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 6px 0;
+}
+
+.hh1 {
+  background: linear-gradient(to right, #ad67f8, #ef9472);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.second-road > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.onech,
+.twoch,
+.threech,
+.fourch {
+  margin-bottom: 10px;
+}
+
+.onech h3,
+.twoch h3,
+.threech h3,
+.fourch h3 {
+  margin: 6px 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.pech,
+.pech1,
+.pech2,
+.pech3 {
+  padding: 15px;
+  border-left: 4px solid #ef9472;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+}
+
+.pghs {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 5px 0;
+  color: #81afdd;
+}
+
+.pack {
+  margin-bottom: 30px;
+}
+
+/* ✅ Responsive (Mobile) */
+@media (max-width: 768px) {
+  .container-page3 {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .hone h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .second-road > div {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .onech h3,
+  .twoch h3,
+  .threech h3,
+  .fourch h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .pghs {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .pech,
+  .pech1,
+  .pech2,
+  .pech3 {
+    padding: 12px;
+  }
+}

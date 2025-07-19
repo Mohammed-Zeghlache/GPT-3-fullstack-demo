@@ -1,0 +1,174 @@
+/* Openai.css */
+
+.openai-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #031329;
+  color: #1c1c1e;
+  min-height: 100vh;
+}
+
+/* Header */
+.openai-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #031b34;
+  padding: 20px 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.openai-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.openai-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.openai-nav button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.openai-nav button:hover {
+  color: #ff4820;
+}
+
+/* Main Content */
+.openai-main {
+  padding: 60px 80px;
+}
+
+.openai-about {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 50px;
+}
+
+.openai-about h1 {
+  font-size: 32px;
+  color: #031b34;
+  margin-bottom: 20px;
+}
+
+.openai-about p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.openai-about ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.openai-about ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* CTA Section */
+.openai-cta {
+  background-color: #031b34;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.openai-cta h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.openai-cta p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.openai-cta button {
+  padding: 12px 28px;
+  background-color: #ff4820;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.openai-cta button:hover {
+  background-color: #e03f15;
+}
+
+/* ✅ Responsive: Mobile Styles */
+@media (max-width: 768px) {
+  .openai-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px;
+  }
+
+  .openai-nav {
+    margin-top: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .openai-nav button {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .openai-main {
+    padding: 30px 20px;
+  }
+
+  .openai-about {
+    padding: 25px 20px;
+  }
+
+  .openai-about h1 {
+    font-size: 24px;
+  }
+
+  .openai-about p {
+    font-size: 15px;
+  }
+
+  .openai-about ul li {
+    font-size: 14px;
+  }
+
+  .openai-cta {
+    padding: 25px 20px;
+  }
+
+  .openai-cta h2 {
+    font-size: 22px;
+  }
+
+  .openai-cta p {
+    font-size: 14px;
+  }
+
+  .openai-cta button {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+}

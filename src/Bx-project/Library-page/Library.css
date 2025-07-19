@@ -1,0 +1,185 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #040e1c;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Container */
+.library-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 100px auto 50px;
+ 
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fffefd;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links button:hover {
+  color: #ff4820;
+}
+
+/* About Section */
+.about-gpt {
+  margin: 40px 0;
+  color: #ccc;
+}
+
+.about-gpt h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Library Intro */
+.library-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.library-desc {
+  text-align: center;
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+/* Search Bar */
+.library-search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.library-search input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.library-search button {
+  padding: 10px 20px;
+  background-color: #ff4820;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.library-search button:hover {
+  background-color: #c02907;
+}
+
+/* Book Cards */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.book-card {
+  background-color: #0f2c56;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.book-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.book-card .summary {
+  margin: 10px 0;
+}
+
+.book-card button {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid #ff4820;
+  color: #ff4820;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-card button:hover {
+  background-color: #ff4820;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .library-search input {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .library-search button {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .library-title {
+    font-size: 28px;
+  }
+
+  .book-card h2 {
+    font-size: 20px;
+  }
+}

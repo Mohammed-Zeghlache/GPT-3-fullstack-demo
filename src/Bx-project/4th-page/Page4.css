@@ -1,0 +1,64 @@
+h1 {
+  background: linear-gradient(to right, #ad67f8, #ef9472);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fp-page4 {
+  color: #71E5FF;
+  margin-top: 150px;
+  margin-bottom: 25px;
+}
+
+.p-page4 {
+  color: #FF8A71;
+  margin-top: 40px;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  margin-left: 200px;
+  object-fit: cover;
+}
+
+.container-page4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 170px 150px 80px;
+  gap: 40px;
+}
+
+.pp-page4 {
+  margin-top: 15px;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .container-page4 {
+    flex-direction: column-reverse;
+    margin: 40px 20px;
+    gap: 30px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .fp-page4 {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .p-page4,
+  .pp-page4,
+  h1 {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
