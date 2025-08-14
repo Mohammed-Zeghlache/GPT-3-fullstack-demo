@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Routes, Route } from 'react-router-dom';
 import Login from "./Bx-project/Login-page/Login";
 import Header from "./Bx-project/Header/Header"
@@ -23,7 +23,7 @@ import './App.css';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<Login />}/>
       <Route path="/Library" element={<Library/>} />
       <Route path="/WhatisGPt-3" element={<Whatisgpt />} />
        <Route path="/Case-Studies" element={<Case />} />

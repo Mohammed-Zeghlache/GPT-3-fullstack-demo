@@ -8,7 +8,7 @@ const Login = () => {
   const addEmail = useRef();
   const addPassword = useRef();
   const navigate = useNavigate();
-  const goToLogin =()=> setTimeout(() => navigate('/Login'), 800);
+  const goToLogin = () => setTimeout(() => navigate('/Login'), 800);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,11 +25,15 @@ const Login = () => {
     const frontData = { Username, email: Email, password: Password };
 
     try {
-      const response = await axios.post("http://localhost:5001/register", frontData);
+      const API_URL =
+        process.env.NODE_ENV === "production"
+          ? "https://descover-gpt3-7ipx.onrender.com/register"
+          : "http://localhost:5001/register";
+
+      const response = await axios.post(API_URL, frontData);
       const { message } = response.data;
 
       if (message === "User created successfully") {
-        // alert("🎉 Account created successfully!");
         setTimeout(() => {
           navigate("/Home");
         }, 1000);
@@ -38,9 +42,10 @@ const Login = () => {
       }
     } catch (error) {
       console.error("❌ Registration error:", error);
-      // alert("Could not connect to server.");
+      alert("An error occurred during registration.");
     }
 
+    // Clear inputs
     addUsername.current.value = "";
     addEmail.current.value = "";
     addPassword.current.value = "";
@@ -65,7 +70,8 @@ const Login = () => {
 
         <div className="register">
           <p className="p">
-            Already have an account ? <button onClick={goToLogin} type="button" className="link">Login</button>
+            Already have an account?{" "}
+            <button onClick={goToLogin} type="button" className="link">Login</button>
           </p>
         </div>
       </form>
